@@ -191,3 +191,22 @@ Licence, CC BY 4.0, CC0, MIT — see [LICENSE](LICENSE) third-party notice and
 If this code contributes to your research, please cite the accompanying
 manuscript (citation block to be added upon publication).
 
+
+## Authors and affiliation
+
+YunFei Zhang and Yue Liu
+
+Faculty of Earth Resources; State Key Laboratory of Geological Processes
+and Mineral Resources, China University of Geosciences,
+Wuhan 430074, China.
+
+author:YunFei Zhang (yunfei2021752724@outlook.com)
+
+## License
+
+The original source code in this repository is licensed under the
+MIT License. See LICENSE for details.
+
+Third-party code and datasets remain subject to their respective
+copyright notices and license terms. The MIT License for this project
+does not replace or override those terms.
