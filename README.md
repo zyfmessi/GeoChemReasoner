@@ -36,7 +36,7 @@ Agent_New/
 │   ├── evidence.py        #   Data plane: evidence ledger
 │   ├── reasoning/         #   Reasoning + control plane: LangGraph main graph,
 │   │                      #   ReAct planner, task classifier, review node
-│   ├── tools/             #   Tool plane: 110 registered tools + registry
+│   ├── tools/             #   Tool plane: 108 registered tools + registry
 │   ├── llm/               #   LLM backends (OpenAI-compatible / Ollama), gate
 │   ├── memory.py          #   Optional cross-task conclusion memory
 │   ├── report.py          #   Markdown report renderer
@@ -124,13 +124,8 @@ rule-based planner instead (ablation baseline / offline reproduction), pass
 
 ```bash
 # Deterministic self-test of the whole system (no model needed, ~1-2 min)
-python scripts/一键运行全部测试.py --quick
+python scripts/start_agent.py --quick
 
-# Single genesis-analysis run against your data (LLM required)
-python scripts/启动矿床智能体.py \
-    --files path/to/whole_rock.xlsx path/to/geology_notes.txt \
-    --task "解释该岩体的成因与岩浆演化过程" \
-    --out output/demo_run
 ```
 
 Every run writes to the `--out` directory:
