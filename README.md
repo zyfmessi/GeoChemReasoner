@@ -42,10 +42,6 @@ Agent_New/
 │   ├── report.py          #   Markdown report renderer
 │   └── runner.py          #   OreGenesisRunner: files + task -> result
 ├── scripts/               # All benchmark build / run / scoring / plotting scripts
-│   └── README.md          #   Script inventory (Chinese filenames explained)
-├── docs/                  # User guide, tutorial, reproducibility statement
-├── frontend/              # Optional Vue 3 + FastAPI web demo (Chinese UI)
-├── figures/               # Paper figure sources and generation scripts
 ├── requirements.txt       # Python dependencies
 ├── .env.example           # LLM endpoint configuration template
 └── LICENSE                # MIT license
@@ -78,7 +74,7 @@ Agent_New/
   Qwen3.6-27B, GGUF quantized, context window 32768): a single consumer GPU
   with **≥ 16 GB VRAM** for 8B–14B models, **≥ 24 GB VRAM** for 24B–30B models.
   Smaller contexts can be configured with `LLM_NUM_CTX` (see `.env.example`).
-- The deterministic test suite (`架构自检`, tool inventory, soil suite,
+- The deterministic test suite ( tool inventory, soil suite,
   no-LLM smoke tests) runs CPU-only in about 1–2 minutes.
 
 ## Installation
