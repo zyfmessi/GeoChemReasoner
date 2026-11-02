@@ -153,11 +153,7 @@ redistributed) are given in
 
 ```bash
 # sanity path: deterministic regression over 110 tools + benchmark smoke (no model)
-python scripts/一键运行全部测试.py
-
-# full formal evaluation of Tasks D, C, A with a chosen model tag
-python scripts/运行正式评测.py --tag <model-tag>
-```
+python scripts
 
 All benchmark *construction* scripts are included, so exam papers can be
 rebuilt from the original public data sources (GTK FODD, ExploreSA Gawler,
