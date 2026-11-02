@@ -29,7 +29,7 @@ Determinism notes:
 - Benchmark construction uses fixed random seeds (`--seed`, default 42) and
   atomic 0.5°/1° spatial block splits to prevent train/test leakage.
 
-2. Standalone GeoChemReasoner startup
+##2. Standalone GeoChemReasoner startup
 GeoChemReasoner can be started independently using the main agent entry script. From the repository root, install the required dependencies and run:
 pip install -r requirements.txt
 python "core_code/script/start_agent.py"
@@ -39,7 +39,8 @@ LLM_API_BASE
 LLM_API_KEY
 LLM_MODEL_NAME
 The model endpoint and model identifier are supplied entirely through the runtime environment and are not hard-coded in the startup script.
-3. Main results → scripts
+
+##3. Main results → scripts
 The main results reported for Tasks F and G were generated using three parallel execution configurations: the complete GeoChemReasoner agent, a standard ReAct agent, and a single-shot LLM baseline. All three evaluation entry scripts are located in:
 core_code/script/
 Configuration	Entry script	Description
