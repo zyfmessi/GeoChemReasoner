@@ -1,0 +1,38 @@
+[
+  {
+    "task": "task1_yellow_pine",
+    "conclusion_head": "首选成因类型为与 Eocene 岩浆热液有关的**中低温热液脉型 Sb–Au（±W）矿床**（类比 Stibnite 型，置信度 0.6）；核心依据是石英世代 Q1→Q2→Q3 的脉状序列、Q1 中 CO₂–H₂O 包裹体（Tm_CO2 −",
+    "n_observations": 36,
+    "file": "card_task1_yellow_pine.json"
+  },
+  {
+    "task": "task2_hangar_flat",
+    "conclusion_head": "# Hangar Flat 矿床成因推断（中等信息案例）\n\n> 说明：本次可用材料中，`deposits/hangar_flat/` 的矿床级数据未以独立文件形式出现，实际可引用的数值证据均来自 `shared_context/` 中标注为",
+    "n_observations": 32,
+    "file": "card_task2_hangar_flat.json"
+  },
+  {
+    "task": "task3_west_end",
+    "conclusion_head": "# West End 矿床成因推断（中等信息对比案例）\n\n首选为与 Eocene 岩浆-热液系统相关的**中低温热液 Au-Ag-Hg（±Sb、W）脉型/浸染型矿化**，置信度 0.55；核心依据是全岩 Au 最高 1113 ppb、Hg ",
+    "n_observations": 30,
+    "file": "card_task3_west_end.json"
+  },
+  {
+    "task": "task4_distal_hg_zoning",
+    "conclusion_head": "# 远端汞矿化带（Cinnabar–Hermes–Fern）空间分带推断技术报告\n\n## \n\n**首选成因类型：低温浅成热液（epithermal）汞-锑-砷矿化带的外缘/远端相，置信度 0.55**；核心依据是本带全岩 Hg 高达 199",
+    "n_observations": 25,
+    "file": "card_task4_distal_hg_zoning.json"
+  },
+  {
+    "task": "task5_cross_deposit_synthesis",
+    "conclusion_head": "# 任务 5：Stibnite–Yellow Pine 矿集区跨矿床综合（层级 2）\n\n## 【最终结论】\n\n**首选为\"单一 Eocene 岩浆热液系统的多相/多阶段叠加成矿系统\"，置信度 0.55**；核心依据是四个子案例共享同一 Eo",
+    "n_observations": 58,
+    "file": "card_task5_cross_deposit_synthesis.json"
+  },
+  {
+    "task": "task6_leave_one_out_hangar_flat",
+    "conclusion_head": "Hangar Flat 首选为与 Eocene 岩浆热液有关的**中低温热液脉型 Sb–Au（±W）矿床**，与 Yellow Pine 同属一个成矿系统，置信度 0.55；核心依据是它位于同一 Stibnite–Yellow Pine 矿",
+    "n_observations": 42,
+    "file": "card_task6_leave_one_out_hangar_flat.json"
+  }
+]

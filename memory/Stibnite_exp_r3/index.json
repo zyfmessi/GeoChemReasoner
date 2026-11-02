@@ -1,0 +1,38 @@
+[
+  {
+    "task": "task1_yellow_pine",
+    "conclusion_head": "首选成因类型为与始新世岩浆活动相关的浅成中低温热液脉型 Au–Sb（低硫化型）矿床，置信度 0.6；核心依据是石英流体包裹体均一温度 281–387°C、盐度 3.2–9 wt% NaCl（Microtherm_YP.csv，E-026/E",
+    "n_observations": 35,
+    "file": "card_task1_yellow_pine.json"
+  },
+  {
+    "task": "task2_hangar_flat",
+    "conclusion_head": "# Hangar Flat 矿床成因推断（中等信息案例）\n\n> 说明：本报告严格只引用所给材料中出现的字段与证据编号。材料中未见 `deposits/hangar_flat/` 的独立文件清单，故以下所有数值均来自共享背景中与 Yellow",
+    "n_observations": 32,
+    "file": "card_task2_hangar_flat.json"
+  },
+  {
+    "task": "task3_west_end",
+    "conclusion_head": "# West End 矿床成因推断（中等信息对比案例）\n\n首选为与 Eocene 岩浆-热液系统相关的**中低温热液 Au-Ag-Sb-Hg 脉型/浸染型矿化**（族群：浅成低温热液—远端岩浆热液过渡型），置信度 **0.45**；核心依据",
+    "n_observations": 30,
+    "file": "card_task3_west_end.json"
+  },
+  {
+    "task": "task4_distal_hg_zoning",
+    "conclusion_head": "首选成因类型：远端低温热液汞（辰砂）矿化带，属浅成低温热液 Hg–Sb（±As）系统外缘，置信度 0.55；核心依据为辰砂 δ³⁴S 显著负偏且离散（n=12，−18.82~+5.075‰，均值 −10.59‰）[E-019]，配合 Her",
+    "n_observations": 26,
+    "file": "card_task4_distal_hg_zoning.json"
+  },
+  {
+    "task": "task5_cross_deposit_synthesis",
+    "conclusion_head": "# Stibnite–Yellow Pine 矿集区跨矿床综合分析（层级 2）\n\n## \n\n**首选为同一 Eocene 岩浆-热液成矿系统（低硫化浅成低温—远端岩浆热液连续谱），置信度 0.55**；核心依据是四个矿床共享同一 Eocen",
+    "n_observations": 58,
+    "file": "card_task5_cross_deposit_synthesis.json"
+  },
+  {
+    "task": "task6_leave_one_out_hangar_flat",
+    "conclusion_head": "Hangar Flat 首选为与始新世岩浆活动相关的浅成中低温热液 Au–Sb（±Hg）脉型矿床，属低硫化型浅成低温热液—远端岩浆热液过渡族群，置信度 0.5；核心依据是它与 Yellow Pine、West End、Distal Hg Z",
+    "n_observations": 44,
+    "file": "card_task6_leave_one_out_hangar_flat.json"
+  }
+]
