@@ -1,0 +1,1 @@
+"""LLM backend (OpenAI-compatible / direct urllib, serving the narrative report layer and optional explanations)."""  # Module docstring: this package is the LLM backend layer, called by the narrative report and optional explanations
