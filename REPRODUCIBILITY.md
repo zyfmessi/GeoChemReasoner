@@ -5,9 +5,7 @@ produce them, records the compute environment used, and states which data can
 be redistributed and which cannot (with the reasons and the workarounds).
 
 ---
-
-## 1. Software environment used for the paper
-
+##1. Software environment used for the paper
 | Item | Value |
 |---|---|
 | OS | Windows 10 x64 |
