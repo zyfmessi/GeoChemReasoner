@@ -1,0 +1,157 @@
+{
+  "diagram_id": "pearce1984_nb_y",
+  "display_name": "Nb vs Y granite tectonic discrimination diagram (Pearce et al., 1984)",
+  "category": "C5",
+  "axes": [
+    {
+      "key": "x",
+      "expression": "Y",
+      "label": "Y",
+      "unit": "ppm",
+      "scale": "log10",
+      "axis_range": [
+        1,
+        100
+      ]
+    },
+    {
+      "key": "y",
+      "expression": "Nb",
+      "label": "Nb",
+      "unit": "ppm",
+      "scale": "log10",
+      "axis_range": [
+        0.1,
+        100
+      ]
+    }
+  ],
+  "regions": [
+    {
+      "region_id": "vag_syn_colg",
+      "name_cn": "火山弧+同碰撞花岗岩区",
+      "polygon_vertices": [
+        [
+          1,
+          1.0
+        ],
+        [
+          100,
+          31.6
+        ],
+        [
+          100,
+          0.1
+        ],
+        [
+          1,
+          0.1
+        ]
+      ],
+      "description": "下部带：VAG 与 syn-COLG 在此图上不可分",
+      "evidence_tags": [
+        "volcanic_arc_granite",
+        "syn_collisional_granite"
+      ],
+      "priority": 0
+    },
+    {
+      "region_id": "org",
+      "name_cn": "洋脊花岗岩区",
+      "polygon_vertices": [
+        [
+          1,
+          1.0
+        ],
+        [
+          100,
+          31.6
+        ],
+        [
+          100,
+          80.0
+        ],
+        [
+          1,
+          8.0
+        ]
+      ],
+      "description": "中部楔形带：洋脊/洋内环境花岗岩",
+      "evidence_tags": [
+        "ocean_ridge_granite"
+      ],
+      "priority": 1
+    },
+    {
+      "region_id": "wpg",
+      "name_cn": "板内花岗岩区",
+      "polygon_vertices": [
+        [
+          1,
+          8.0
+        ],
+        [
+          100,
+          80.0
+        ],
+        [
+          100,
+          100
+        ],
+        [
+          1,
+          100
+        ]
+      ],
+      "description": "上部带：板内伸展环境花岗岩",
+      "evidence_tags": [
+        "within_plate_granite"
+      ],
+      "priority": 2
+    }
+  ],
+  "boundaries": [
+    {
+      "boundary_id": "org_vag_line",
+      "polyline_vertices": [
+        [
+          1,
+          1.0
+        ],
+        [
+          100,
+          31.6
+        ]
+      ],
+      "separates": [
+        "vag_syn_colg",
+        "org"
+      ],
+      "description": "ORG 下界线（VAG+syn-COLG 顶界）"
+    },
+    {
+      "boundary_id": "wpg_org_line",
+      "polyline_vertices": [
+        [
+          1,
+          8.0
+        ],
+        [
+          100,
+          80.0
+        ]
+      ],
+      "separates": [
+        "org",
+        "wpg"
+      ],
+      "description": "WPG/ORG 界线"
+    }
+  ],
+  "references": [
+    "Pearce, Harris & Tindle (1984) J. Petrology 25:956-983, Fig.9（Nb vs Y）"
+  ],
+  "fidelity": 0.3,
+  "verification_status": "approximate_digitization_required",
+  "encoding_notes": "近似编码（凭再版图件记忆给出两条 log-log 直线端点：E(1,1)-(100,31.6)、D(1,8)-(100,80)），未对原图逐点数字化。正式使用前：用 diagram.digitizer 对原图数字化并替换顶点，fidelity 提升至 0.9+。当前仅可作初筛参考。"
+}

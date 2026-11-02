@@ -1,0 +1,98 @@
+{
+  "diagram_id": "tas_lebas1986",
+  "display_name": "TAS diagram (total alkali vs silica)",
+  "category": "C6",
+  "axes": [
+    {
+      "key": "x",
+      "expression": "SiO2",
+      "label": "SiO2",
+      "unit": "wt%",
+      "scale": "linear",
+      "axis_range": [35, 80]
+    },
+    {
+      "key": "y",
+      "expression": "Na2O+K2O",
+      "label": "Na2O+K2O",
+      "unit": "wt%",
+      "scale": "linear",
+      "axis_range": [0, 16]
+    }
+  ],
+  "regions": [
+    {
+      "region_id": "ultrabasic_band",
+      "name_cn": "超基性岩类（SiO2<45）",
+      "polygon_vertices": [[35, 0], [45, 0], [45, 16], [35, 16]],
+      "description": "SiO2<45 wt%：苦橄质-超基性侵入岩组合（与内置 tas_classification 的 45 界线一致）",
+      "evidence_tags": ["ultramafic_composition"],
+      "priority": 0
+    },
+    {
+      "region_id": "basic_band",
+      "name_cn": "基性岩类（45≤SiO2<52）",
+      "polygon_vertices": [[45, 0], [52, 0], [52, 16], [45, 16]],
+      "description": "45≤SiO2<52 wt%：玄武岩-粗面玄武岩组合",
+      "evidence_tags": ["mafic_composition"],
+      "priority": 0
+    },
+    {
+      "region_id": "intermediate_band",
+      "name_cn": "中性岩类（52≤SiO2<63）",
+      "polygon_vertices": [[52, 0], [63, 0], [63, 16], [52, 16]],
+      "description": "52≤SiO2<63 wt%：安山岩-粗面安山岩组合",
+      "evidence_tags": ["intermediate_composition"],
+      "priority": 0
+    },
+    {
+      "region_id": "intermediate_acid_band",
+      "name_cn": "中酸性岩类（63≤SiO2<69）",
+      "polygon_vertices": [[63, 0], [69, 0], [69, 16], [63, 16]],
+      "description": "63≤SiO2<69 wt%：英安岩-粗面英安岩组合",
+      "evidence_tags": ["intermediate_acid_composition"],
+      "priority": 0
+    },
+    {
+      "region_id": "acid_band",
+      "name_cn": "酸性岩类（SiO2≥69）",
+      "polygon_vertices": [[69, 0], [80, 0], [80, 16], [69, 16]],
+      "description": "SiO2≥69 wt%：流纹岩组合",
+      "evidence_tags": ["felsic_composition"],
+      "priority": 0
+    }
+  ],
+  "boundaries": [
+    {
+      "boundary_id": "si45_boundary",
+      "polyline_vertices": [[45, 0], [45, 16]],
+      "separates": ["ultrabasic_band", "basic_band"],
+      "description": "SiO2=45 wt% 线：超基性/基性分界（Le Bas 口径）"
+    },
+    {
+      "boundary_id": "si52_boundary",
+      "polyline_vertices": [[52, 0], [52, 16]],
+      "separates": ["basic_band", "intermediate_band"],
+      "description": "SiO2=52 wt% 线：基性/中性分界"
+    },
+    {
+      "boundary_id": "si63_boundary",
+      "polyline_vertices": [[63, 0], [63, 16]],
+      "separates": ["intermediate_band", "intermediate_acid_band"],
+      "description": "SiO2=63 wt% 线：中性/中酸性分界"
+    },
+    {
+      "boundary_id": "si69_boundary",
+      "polyline_vertices": [[69, 0], [69, 16]],
+      "separates": ["intermediate_acid_band", "acid_band"],
+      "description": "SiO2=69 wt% 线：中酸性/酸性分界"
+    }
+  ],
+  "references": [
+    "Le Bas, M.J., Le Maitre, R.W., Streckeisen, A. & Zanettin, B. (1986) J. Petrol. 27:745-750",
+    "Irvine, T.N. & Baragar, W.R.A. (1971) Can. J. Earth Sci. 8:523-548（碱性分界未编码）"
+  ],
+  "fidelity": 0.6,
+  "verification_status": "approximate_digitization_required",
+  "encoding_notes": "简化竖直分带编码：SiO2=45/52/63/69 四条界线，与内置 tas_classification 工具的五级口径完全一致（保证图面与工具输出互验）；未编码 Le Bas 的碱度细分字段（粗面玄武岩/响碱玄岩等）与 Irvine & Baragar 碱性分界线，细分判读请调用 tas_classification 与 acnk_shand_classification 工具。"
+}

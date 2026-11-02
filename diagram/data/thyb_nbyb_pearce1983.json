@@ -1,0 +1,71 @@
+{
+  "diagram_id": "thyb_nbyb_pearce1983",
+  "display_name": "Th/Yb vs Nb/Yb discrimination diagram (Pearce 1983)",
+  "category": "C6",
+  "axes": [
+    {
+      "key": "x",
+      "expression": "Nb/Y",
+      "label": "Nb/Y",
+      "unit": "ratio",
+      "scale": "log10",
+      "axis_range": [0.1, 30]
+    },
+    {
+      "key": "y",
+      "expression": "Th/Yb",
+      "label": "Th/Yb",
+      "unit": "ratio",
+      "scale": "log10",
+      "axis_range": [0.02, 30]
+    }
+  ],
+  "regions": [
+    {
+      "region_id": "nmorb_vab_band",
+      "name_cn": "N-MORB/火山弧带",
+      "polygon_vertices": [[0.1, 0.02], [30, 0.02], [30, 5.3], [0.1, 0.029]],
+      "description": "Th/Yb 最低带：N-MORB 与岛弧拉斑系列，亏损地幔源区或俯冲流体加低Th组分",
+      "evidence_tags": ["nmorb", "volcanic_arc_tholeiitic", "depleted mantle"],
+      "priority": 0
+    },
+    {
+      "region_id": "emorb_band",
+      "name_cn": "E-MORB 带",
+      "polygon_vertices": [[0.1, 0.029], [30, 5.3], [30, 17.7], [0.1, 0.098]],
+      "description": "Th/Yb 居中带：富集型洋中脊玄武岩或 E-MORB 型地幔源区",
+      "evidence_tags": ["emorb", "enriched_mantle"],
+      "priority": 0
+    },
+    {
+      "region_id": "oib_band",
+      "name_cn": "OIB/板内带",
+      "polygon_vertices": [[0.1, 0.098], [30, 17.7], [30, 30], [0.1, 30]],
+      "description": "Th/Yb 最高带：板内/OIB 型源区，指示地幔柱组分或富集岩石圈",
+      "evidence_tags": ["oib", "intraplate", "plume_mantle"],
+      "priority": 0
+    }
+  ],
+  "boundaries": [
+    {
+      "boundary_id": "nmorb_emorb_line",
+      "polyline_vertices": [[0.3, 0.08], [10, 2.0]],
+      "separates": ["nmorb_vab_band", "emorb_band"],
+      "description": "N-MORB/E-MORB 分界（log-log 空间近似直线，两点式编码）"
+    },
+    {
+      "boundary_id": "emorb_oib_line",
+      "polyline_vertices": [[0.3, 0.27], [10, 8.0]],
+      "separates": ["emorb_band", "oib_band"],
+      "description": "E-MORB/OIB 分界（log-log 空间近似直线，两点式编码）"
+    }
+  ],
+  "references": [
+    "Pearce, J.A. (1983) In: Continental basalts and mantle xenoliths, Shiva, 230-249",
+    "Pearce, J.A. & Cann, J.R. (1973) Earth Planet. Sci. Lett. 19:290-300",
+    "Saccani, E. (2015) Geosci. Front. 6:603-628（数字化惯例参照）"
+  ],
+  "fidelity": 0.4,
+  "verification_status": "approximate_digitization_required",
+  "encoding_notes": "三带近似编码：log-log 空间两条近平行界线各取两点式编码（斜率约 0.92/0.97），带位置凭记忆按 Pearce (1983) 原图近似数字化；判读仅作构造环境方向性参考，定量判别请结合 Ti-Zr、V-Ti 等工具交叉验证。"
+}

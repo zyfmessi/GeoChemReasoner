@@ -1,0 +1,63 @@
+{
+  "diagram_id": "sr_y_vs_y_adakite",
+  "display_name": "Sr/Y-Y discrimination diagram",
+  "category": "C6",
+  "axes": [
+    {
+      "key": "x",
+      "expression": "Y",
+      "label": "Y",
+      "unit": "ppm",
+      "scale": "log10",
+      "axis_range": [1, 100]
+    },
+    {
+      "key": "y",
+      "expression": "Sr/Y",
+      "label": "Sr/Y",
+      "unit": "ratio",
+      "scale": "linear",
+      "axis_range": [0, 200]
+    }
+  ],
+  "regions": [
+    {
+      "region_id": "high_SrY_field",
+      "name_cn": "高Sr/Y（埃达克质）区",
+      "polygon_vertices": [[1, 40], [18, 40], [18, 200], [1, 200]],
+      "description": "Sr/Y≥40 且 Y≤18 ppm：石榴子石/角闪石残留、斜长石不分离的深部熔体信号，斑岩铜矿含矿岩体标志",
+      "evidence_tags": ["adakitic_magma", "garnet_amphibole_residue", "porphyry_cu_fertility"],
+      "priority": 0
+    },
+    {
+      "region_id": "normal_arc_field",
+      "name_cn": "正常岛弧区",
+      "polygon_vertices": [[1, 0], [100, 0], [100, 200], [18, 200], [18, 40], [1, 40]],
+      "description": "Sr/Y<40 或 Y>18 ppm：斜长石分离控制的正常弧岩浆演化趋势",
+      "evidence_tags": ["normal_arc_magma", "plagioclase_fractionation"],
+      "priority": 1
+    }
+  ],
+  "boundaries": [
+    {
+      "boundary_id": "sry40_boundary",
+      "polyline_vertices": [[1, 40], [18, 40]],
+      "separates": ["high_SrY_field", "normal_arc_field"],
+      "description": "Sr/Y=40 线：埃达克质与正常弧岩浆的经典界线（Y≤18 ppm 段）"
+    },
+    {
+      "boundary_id": "y18_boundary",
+      "polyline_vertices": [[18, 40], [18, 200]],
+      "separates": ["high_SrY_field", "normal_arc_field"],
+      "description": "Y=18 ppm 线：重稀土富集中等以上的样品退出高Sr/Y区"
+    }
+  ],
+  "references": [
+    "Defant & Drummond (1990) Nature 350:664-665",
+    "Drummond & Defant (1990) JGR 95:21503-21521",
+    "Richards & Kerrich (2007) Economic Geology 102:247-266（图形界线重绘版）"
+  ],
+  "fidelity": 0.9,
+  "verification_status": "verified",
+  "encoding_notes": "矩形简化编码：高Sr/Y区 = {Sr/Y ≥ 40} ∩ {Y ≤ 18 ppm}，与 Richards & Kerrich (2007) Fig.1 重绘界线一致；Y 轴 log10、Sr/Y 轴线性。两点式界线在 log-Y 轴上为直线，与原图界线形态相符。"
+}

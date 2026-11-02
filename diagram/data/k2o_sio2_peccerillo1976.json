@@ -1,0 +1,70 @@
+{
+  "diagram_id": "k2o_sio2_peccerillo1976",
+  "display_name": "K2O vs SiO2 classification (Peccerillo & Taylor 1976)",
+  "category": "C6",
+  "axes": [
+    {
+      "key": "x",
+      "expression": "SiO2",
+      "label": "SiO2",
+      "unit": "wt%",
+      "scale": "linear",
+      "axis_range": [45, 80]
+    },
+    {
+      "key": "y",
+      "expression": "K2O",
+      "label": "K2O",
+      "unit": "wt%",
+      "scale": "linear",
+      "axis_range": [0, 7]
+    }
+  ],
+  "regions": [
+    {
+      "region_id": "low_k_series",
+      "name_cn": "低钾拉斑系列",
+      "polygon_vertices": [[45, 0], [80, 0], [80, 2.6], [45, 0.4]],
+      "description": "K2O 低于下界线：低钾拉斑玄武岩系列，典型于洋内弧与亏损弧环境",
+      "evidence_tags": ["low_k_tholeiitic", "island_arc"],
+      "priority": 0
+    },
+    {
+      "region_id": "medium_k_calc_alkaline",
+      "name_cn": "中钾钙碱性系列",
+      "polygon_vertices": [[45, 0.4], [80, 2.6], [80, 5.2], [45, 1.6]],
+      "description": "两条界线之间：中钾钙碱性系列，典型大陆弧岩浆组合",
+      "evidence_tags": ["medium_k_calc_alkaline", "continental_arc"],
+      "priority": 0
+    },
+    {
+      "region_id": "high_k_shoshonitic",
+      "name_cn": "高钾-钾玄质系列",
+      "polygon_vertices": [[45, 1.6], [80, 5.2], [80, 7], [45, 7]],
+      "description": "K2O 高于上界线：高钾钙碱性-钾玄岩系列，常见于后碰撞或富集岩石圈环境",
+      "evidence_tags": ["high_k", "shoshonitic", "post_collisional"],
+      "priority": 0
+    }
+  ],
+  "boundaries": [
+    {
+      "boundary_id": "lk_mk_line",
+      "polyline_vertices": [[45, 0.4], [80, 2.6]],
+      "separates": ["low_k_series", "medium_k_calc_alkaline"],
+      "description": "低钾/中钾分界线（线性两端点编码，跨全图宽度）"
+    },
+    {
+      "boundary_id": "mk_hk_line",
+      "polyline_vertices": [[45, 1.6], [80, 5.2]],
+      "separates": ["medium_k_calc_alkaline", "high_k_shoshonitic"],
+      "description": "中钾/高钾分界线（线性两端点编码）"
+    }
+  ],
+  "references": [
+    "Peccerillo, A. & Taylor, S.R. (1976) Contrib. Mineral. Petrol. 58:63-81",
+    "Rickwood, P.C. (1989) Geochem. News 51（数字化惯例参照）"
+  ],
+  "fidelity": 0.5,
+  "verification_status": "approximate_digitization_required",
+  "encoding_notes": "两条主界线（低钾/中钾、中钾/高钾）按线性两端点编码、跨越全图宽度；P&T 1976 原图的第三条界线（高钾/钾玄质细分）未编码，高钾与钾玄质在本编码中合并。"
+}
