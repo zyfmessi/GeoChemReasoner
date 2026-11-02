@@ -1,7 +1,6 @@
 # GeoChemReasoner
-# OreGenesis-Agent
 
-**OreGenesis-Agent** is an evidence-constrained ReAct agent for mineral deposit
+** GeoChemReasoner-Agent** is an evidence-constrained ReAct agent for mineral deposit
 **prospectivity targeting** (*where might ore be?*) and **metallogenic genesis
 analysis** (*why and how did the mineralization form?*). Given ordinary
 exploration data files — Excel/CSV geochemistry, text reports, images — the
